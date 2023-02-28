@@ -19,9 +19,6 @@ html{
 body{
   height: 100%;
 }
-.header{
-    font-family: 'Cookie', cursive;
-}
 .material-symbols-rounded {
   font-variation-settings:
   'FILL' 0,
@@ -32,11 +29,5 @@ body{
 .svg{
   height: 24px;
   width: 24px;
-}
-.main{
-  min-height: calc(100vh - 60px - 48px);
-  position: relative;
-  top: 60px;
-  left: 0;
-  right: 0;
+  cursor: pointer;
 }
