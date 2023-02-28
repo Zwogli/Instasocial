@@ -1,3 +1,9 @@
+:root{
+  --color-dark: #000000;
+  --color-bright: #F5F5F5;
+  --color-follow: #0081D5;
+  --color-lines: #262626;
+}
 $color-dark: #000000;
 $color-bright: #F5F5F5;
 $color-follow: #0081D5;
@@ -7,7 +13,12 @@ $color-lines: #262626;
   padding: 0;
   margin: 0;
 }
-
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
 .header{
     font-family: 'Cookie', cursive;
 }
@@ -22,6 +33,10 @@ $color-lines: #262626;
   height: 24px;
   width: 24px;
 }
-main{
-  min-height: calc(100vh - 60px - 49px);
+.main{
+  min-height: calc(100vh - 60px - 48px);
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
 }
