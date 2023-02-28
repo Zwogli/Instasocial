@@ -15,4 +15,8 @@
 .svg {
   height: 24px;
   width: 24px;
+}
+
+main {
+  min-height: calc(100vh - 60px - 49px);
 }/*# sourceMappingURL=style.css.map */
