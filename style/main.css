@@ -1,0 +1,18 @@
+.main {
+  min-height: calc(100vh - 60px - 48px);
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 770px) {
+  main {
+    height: 100vh;
+    width: calc(100vw - 60px);
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
