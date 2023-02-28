@@ -11,9 +11,16 @@
     border-bottom: 1px solid var(--color-lines);
   }
   .nav-head{
+    width: 100%;
+    padding: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 16px;
+  }
+  .headline{
+    text-align: center;
+    margin: 0;
   }
   .searchbar{
     background-image: url(../img/svg/search_FILL0_wght400_GRAD0_opsz48.svg);
@@ -22,9 +29,11 @@
     background-position: left;
     /* background-color: var(--color-lines); */
     height: 36px;
-    padding: 0px 24px;
+    min-width: 125px;
+    width: 268px;
+    padding: 0px 8px 0 24px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid var(--color-lines);
     outline: none;
 }
 footer{
@@ -43,4 +52,8 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media(min-width: 770px){
+    
 }
