@@ -67,7 +67,7 @@
      object-fit: cover;
 }
 .post-body img {
-  width: 96vw;
+  width: 95vw;
   max-width: 470px;
   max-height: 585px;
   -o-object-position: center;
@@ -121,7 +121,7 @@
 @media (min-width: 770px) {
   main {
     height: 100vh;
-    width: calc(100vw - 72px);
+    width: calc(100vw - 75px);
     right: 0 !important;
     top: 0 !important;
     left: 60px !important;
