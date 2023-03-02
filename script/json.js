@@ -7,7 +7,7 @@ let profil = [
 ]
 let posts = [
     {
-        "user-img": `../img/user-followed/bart-g219181065_640.png`,
+        "user-img": `img/user-followed/bart-g219181065_640.png`,
         "author" : "El Barto",
         "location": "742 Evergreen Terrace, Sprinfield, USA",
         "content": `../img/spray-can-gfda02e312_640.jpg`,
@@ -16,7 +16,7 @@ let posts = [
         "comment": [],
     },
     {
-        "user-img": `../img/user-followed/bird-gc5be3399e_640.png`,
+        "user-img": `img/user-followed/bird-gc5be3399e_640.png`,
         "author" :  "A. Dumbledore",
         "location": "Hogwarts School of Witchcraft and Wizardry, Dufftown, Scotland",
         "content": `../img/pexels-joshua-roberts-13694285.jpg`,
@@ -25,7 +25,7 @@ let posts = [
         "comment": [],
     },
     {
-        "user-img": `../img/user-followed/lord-who-rings-gd1cfe2b71_640.png`,
+        "user-img": `img/user-followed/lord-who-rings-gd1cfe2b71_640.png`,
         "author" :  "Gandalf",
         "location": "Hobbingen, Auenland, Middle Earth",
         "content": `../img/middle-earth-gb2bb08e64_640.jpg`,
@@ -34,7 +34,7 @@ let posts = [
         "comment": [],
     },
     {
-        "user-img": `../img/user-followed/news-gdb05a2f9f_640.png`,
+        "user-img": `img/user-followed/news-gdb05a2f9f_640.png`,
         "author" :  "News",
         "location": "Norwegen, Niedersachsen, Germany",
         "content": `../img/pexels-dominika-roseclay-1094794.jpg`,
@@ -65,7 +65,7 @@ let newUsers = [
         "name":"Peter Blackson",
     },
     {
-        "user-img": `img/user-new/anime-girl.jpg`,
+        "user-img": `img/user-new/quyb.png`,
         "user-name": "animeGirl_2032023",
         "name": "Quyn Mi Sao",
     }
