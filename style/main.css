@@ -39,7 +39,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#subscribe {
   border-bottom: 1px solid var(--color-lines);
+  margin-bottom: 16px;
 }
 
 .post-head {
@@ -63,8 +67,9 @@
      object-fit: cover;
 }
 .post-body img {
-  width: 100vw;
+  width: 96vw;
   max-width: 470px;
+  max-height: 585px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -116,7 +121,7 @@
 @media (min-width: 770px) {
   main {
     height: 100vh;
-    width: calc(100vw - 60px);
+    width: calc(100vw - 72px);
     right: 0 !important;
     top: 0 !important;
     left: 60px !important;
