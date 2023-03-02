@@ -115,4 +115,8 @@ p {
 .p-users-14px-grey {
   font-size: 14px;
   color: var(--color-lines);
+}
+
+.c-pointer {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

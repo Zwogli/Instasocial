@@ -71,6 +71,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    .count-comment{
+      margin-top: 8px;
+    }
     .comment-section{
       margin: 8px 0;
       display: flex;

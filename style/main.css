@@ -82,6 +82,9 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.subscribe .count-comment {
+  margin-top: 8px;
+}
 .subscribe .comment-section {
   margin: 8px 0;
   display: flex;
