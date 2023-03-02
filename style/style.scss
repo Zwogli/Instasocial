@@ -3,6 +3,7 @@
   --color-bright: #F5F5F5;
   --color-follow: #0081D5;
   --color-lines: #737373;
+  --color-hover: #7373734d;
 }
 *{
   padding: 0;
@@ -30,6 +31,9 @@ p{
   height: 24px;
   width: 24px;
   cursor: pointer;
+}
+.rotate{
+  rotate: -20deg;
 }
 .main-user-img{
   width: 56px;

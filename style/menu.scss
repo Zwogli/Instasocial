@@ -121,6 +121,9 @@ aside{
             img{
                 margin: 0;
             }
+            div{
+                justify-content: flex-start;
+            }
         }
         .logo-img{
             display: none;
@@ -131,9 +134,18 @@ aside{
         }
     }
     .menu-desktop{
+        width: 100%;
         align-items: flex-start;
     }
     .menu-txt{
         display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+    .menu-hover:hover{
+        width: 100%;
+        background-color: var(--color-hover);
+        padding-right: 5px;
+        border-radius: 50px;
     }
 }

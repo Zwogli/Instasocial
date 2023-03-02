@@ -130,6 +130,9 @@ aside .logo-txt {
   aside nav img {
     margin: 0;
   }
+  aside nav div {
+    justify-content: flex-start;
+  }
   aside .logo-img {
     display: none;
   }
@@ -138,9 +141,18 @@ aside .logo-txt {
     font-family: "Cookie", cursive;
   }
   .menu-desktop {
+    width: 100%;
     align-items: flex-start;
   }
   .menu-txt {
     display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  .menu-hover:hover {
+    width: 100%;
+    background-color: var(--color-hover);
+    padding-right: 5px;
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=menu.css.map */
