@@ -45,27 +45,27 @@ let posts = [
 ]
 let newUsers = [
     {
-        "user-img":`img/user-new/pexels-ekaterina-bolovtsova-6607387.png`,
+        "user-img": `img/user-new/pexels-ekaterina-bolovtsova-6607387.png`,
         "user-name": "KatJobs",
         "name": "Katie Jakobs",
     },
     {
-        "user-img":`img/user-new/pexels-guilherme-almeida-1858175.png`,
+        "user-img": `img/user-new/pexels-guilherme-almeida-1858175.png`,
         "user-name": "JaneDoe",
         "name": "Jane Dorothy",
     },
     {
-        "user-img":`img/user-new/pexels-justin-shaifer-1222271.png`,
+        "user-img": `img/user-new/pexels-justin-shaifer-1222271.png`,
         "user-name": "RealJustin",
         "name": "Justin Hamilton",
     },
     {
-        "user-img":`img/user-new/pexels-ola-dapo-3345882.png`,
+        "user-img": `img/user-new/pexels-ola-dapo-3345882.png`,
         "user-name": "TelePete",
         "name":"Peter Blackson",
     },
     {
-        "user-img":`img/user-new/quyb.png`,
+        "user-img": `img/user-new/anime-girl.jpg`,
         "user-name": "animeGirl_2032023",
         "name": "Quyn Mi Sao",
     }

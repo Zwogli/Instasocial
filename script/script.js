@@ -12,7 +12,7 @@ function renderSuggestionUser(){
         newUserBox.innerHTML += /*html*/`
         <div class="suggestions-users">
                             <div class="suggestions-user">
-                                <img id="suggestions-user-img${i}" class="suggestions-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="suggestion-account">
+                                <img id="suggestions-user-img${i}" class="suggestions-user-img" alt="suggestion-account">
                                 <div class="user-margin a-center">
                                     <p class="p-users-14px"><b>${newUser["user-name"]}</b></p>
                                     <p class="p-users-12px-grey">${newUser["name"]}</p>
@@ -21,8 +21,13 @@ function renderSuggestionUser(){
                             <a class="follow a-center">Folgen</a>
                         </div>
         `;
-        document.getElementById(`suggestions-user-img${i}`).src = `${newUser["user-img"]}`;
+        loadNewUserImg(i, newUser);
+        
     }
+}
+
+function loadNewUserImg(i, newUser){
+    return document.getElementById(`suggestions-user-img${i}`).src = `${newUser["user-img"]}`;
 }
 
 function renderProfil(){
