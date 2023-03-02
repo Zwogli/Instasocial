@@ -103,10 +103,19 @@ aside{
                 justify-content: space-between;
                 align-items: center;
             }
-            img{
-                margin-bottom: 8px;
-            }
-        }    
+        }  
+        .menu-hover:hover{
+            width: 40px;
+            background-color: var(--color-hover);
+            border-radius: 100%;
+            justify-content: center;
+        }
+        .hamburger{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
     }
 }
 @media(min-width: 1260px){
@@ -147,5 +156,9 @@ aside{
         background-color: var(--color-hover);
         padding-right: 5px;
         border-radius: 50px;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: flex-start!important;
     }
 }

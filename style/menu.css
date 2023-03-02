@@ -112,8 +112,17 @@ aside .logo-txt {
     justify-content: space-between;
     align-items: center;
   }
-  aside nav img {
-    margin-bottom: 8px;
+  aside .menu-hover:hover {
+    width: 40px;
+    background-color: var(--color-hover);
+    border-radius: 100%;
+    justify-content: center;
+  }
+  aside .hamburger {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 1260px) {
@@ -154,5 +163,9 @@ aside .logo-txt {
     background-color: var(--color-hover);
     padding-right: 5px;
     border-radius: 50px;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: flex-start !important;
   }
 }/*# sourceMappingURL=menu.css.map */
