@@ -23,6 +23,33 @@ article {
 }
 @media (min-width: 1000px) {
   article {
+    font-size: 12px;
+    width: 320px;
     display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 46px 53px 0 0;
+  }
+  article figure {
+    width: 100%;
+  }
+  .user-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .suggestions-section .suggestions-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .suggestions-user {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user-margin {
+    margin-left: 8px;
   }
 }/*# sourceMappingURL=main.css.map */
