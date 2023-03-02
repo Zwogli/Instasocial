@@ -17,7 +17,7 @@
     <script src="script/json.js"></script>
     <script src="script/script.js"></script>
 </head>
-<body>
+<body onload="render()">
     <header id="header">
         <nav class="nav-head">
             <h1 class="headline">Instasocial</h1>
@@ -63,7 +63,7 @@
                     <p class="menu-txt">Erstellen</p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
+                    <img id="menu-profil-img" class="svg" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
                     <p class="menu-txt">Profil</p>
                 </div>
             </div>
@@ -122,10 +122,8 @@
             <figure>
                 <div class="user-box">
                     <div class="suggestions-user">
-                        <img class="main-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
-                        <div class="user-margin a-center">
-                            <p class="p-users-14px"><b>UserName</b></p>
-                            <p class="p-users-14px-grey">Name</p>
+                        <img id="user-img-aside" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" class="main-user-img" alt="account">
+                        <div id="user-name-aside" class="user-margin a-center">                  
                         </div>
                     </div>
                     <a class="follow a-center">Wechseln</a>
@@ -137,8 +135,8 @@
                         <p><b>Alle Ansehen</b></p>
                     </div>
 
-                    <div class="suggestion-profiles">
-                        <div class="suggestions-user">
+                    <div id="suggestions-user" class="suggestion-profiles">
+                        <div class="suggestions-users">
                             <div class="suggestions-user">
                                 <img class="suggestions-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="suggestion-account">
                                 <div class="user-margin a-center">
@@ -173,7 +171,7 @@
             <img class="svg" src="img/svg/slideshow_FILL0_wght400_GRAD0_opsz48.svg" alt="video">
             <img class="svg" src="img/svg/add_box_FILL0_wght400_GRAD0_opsz48.svg" alt="add">
             <img class="svg rotate" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
-            <img class="svg" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
+            <img id="menu-footer-profil-img" class="svg" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
         </nav>
     </footer>
 </body>

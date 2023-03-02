@@ -130,12 +130,20 @@
       .suggestions-container{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
       }
     }
-    .suggestions-user{
+    .suggestion-profiles{
+      display: flex;
+      flex-direction: column;
+    }
+    .suggestions-users{
       display: flex;
       justify-content: space-between;
+    }
+    .suggestions-user{
+      display: flex;
     }
     .user-margin{
       margin-left: 8px;

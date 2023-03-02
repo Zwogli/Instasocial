@@ -28,6 +28,7 @@ p{
   'opsz' 48
 }
 .svg{
+  border-radius: 100%;
   height: 24px;
   width: 24px;
   cursor: pointer;
@@ -36,11 +37,15 @@ p{
   rotate: -20deg;
 }
 .main-user-img{
+  border-radius: 100%;
   width: 56px;
   height: 56px;
   cursor: pointer;
 }
 .suggestions-user-img{
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
   width: 32px;
   height: 32px;
 }

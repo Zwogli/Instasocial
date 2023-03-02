@@ -142,11 +142,19 @@
   .suggestions-section .suggestions-container {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .suggestion-profiles {
+    display: flex;
+    flex-direction: column;
+  }
+  .suggestions-users {
+    display: flex;
     justify-content: space-between;
   }
   .suggestions-user {
     display: flex;
-    justify-content: space-between;
   }
   .user-margin {
     margin-left: 8px;
