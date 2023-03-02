@@ -54,9 +54,14 @@ p{
 .suggestion-margin{
   margin: 16px 0;
 }
-.impress{
-  font-size: 12px;
-  color: var(--color-lines);
+.img-border-42px{
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  object-position: center;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, red, orange) border-box;
+  border-radius: 50%;
+  border: 3px solid transparent;
 }
 .img-border-66px{
   width: 66px;
@@ -70,6 +75,10 @@ p{
 .p-users-12px{
   font-size: 12px;
   color:var(--color-dark);
+}
+.p-users-12px-grey{
+  font-size: 12px;
+  color:var(--color-lines);
 }
 .p-users-14px{
   font-size: 14px;
