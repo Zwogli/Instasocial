@@ -51,6 +51,12 @@ p {
   cursor: pointer;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .a-center {
   display: flex;
   flex-direction: column;

@@ -58,6 +58,12 @@ footer{
 }
 aside{
     display: none;
+    .logo-txt{
+        display: none;
+    }
+}
+.menu-txt{
+    display: none;
 }
 
 @media(min-width: 770px){
@@ -102,5 +108,32 @@ aside{
             }
         }    
     }
-    
+}
+@media(min-width: 1260px){
+    aside{
+        width: 244px;
+        z-index: 5;
+        align-items: flex-start;
+        padding: 0 12px;
+        padding-bottom: 16px;
+        nav{
+            align-items: flex-start;
+            img{
+                margin: 0;
+            }
+        }
+        .logo-img{
+            display: none;
+        }
+        .logo-txt{
+            display: block;
+            font-family: 'Cookie', cursive;;
+        }
+    }
+    .menu-desktop{
+        align-items: flex-start;
+    }
+    .menu-txt{
+        display: flex;
+    }
 }

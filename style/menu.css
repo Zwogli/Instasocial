@@ -65,6 +65,13 @@ footer {
 aside {
   display: none;
 }
+aside .logo-txt {
+  display: none;
+}
+
+.menu-txt {
+  display: none;
+}
 
 @media (min-width: 770px) {
   header {
@@ -107,5 +114,33 @@ aside {
   }
   aside nav img {
     margin-bottom: 8px;
+  }
+}
+@media (min-width: 1260px) {
+  aside {
+    width: 244px;
+    z-index: 5;
+    align-items: flex-start;
+    padding: 0 12px;
+    padding-bottom: 16px;
+  }
+  aside nav {
+    align-items: flex-start;
+  }
+  aside nav img {
+    margin: 0;
+  }
+  aside .logo-img {
+    display: none;
+  }
+  aside .logo-txt {
+    display: block;
+    font-family: "Cookie", cursive;
+  }
+  .menu-desktop {
+    align-items: flex-start;
+  }
+  .menu-txt {
+    display: flex;
   }
 }/*# sourceMappingURL=menu.css.map */

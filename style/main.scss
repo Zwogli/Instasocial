@@ -104,6 +104,7 @@
   }
   @media(min-width: 1000px){
     .suggestion{
+      background-color: var(--color-bright);
       font-size: 12px;
       width: 320px;
       display: flex;
@@ -139,10 +140,11 @@
     .main-section{
       width: calc(100vw - 320px - 60px);
       position: absolute;
-      left: 0px;
       right: 320px;
     }
   }
   @media(min-width: 1260px){
-    
+    .main-section{
+      width: calc(100vw - 244px - 320px);
+    }
   }
