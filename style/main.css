@@ -89,6 +89,7 @@
   align-items: center;
 }
 .subscribe .comment-section input[type=text] {
+  width: 80%;
   height: 18px;
   border: none;
   background-color: var(--color-bright);
