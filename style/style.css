@@ -90,7 +90,7 @@ p {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, red, orange) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, orange) border-box;
   border-radius: 50%;
   border: 3px solid transparent;
 }
@@ -102,7 +102,7 @@ p {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, red, orange) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, orange) border-box;
   border-radius: 50%;
   border: 3px solid transparent;
 }
