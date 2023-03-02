@@ -45,6 +45,10 @@
       width: 24px;
     }
   }
+  .post-body{
+    min-height: 470px;
+    max-height: 585px;
+  }
   @media(min-width: 770px){
     main{
         height: 100vh;
