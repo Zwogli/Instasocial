@@ -5,10 +5,19 @@
   top: 60px;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
 }
 
-article {
+.suggestion {
   display: none;
+}
+
+.more-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 770px) {
@@ -22,7 +31,7 @@ article {
   }
 }
 @media (min-width: 1000px) {
-  article {
+  .suggestion {
     font-size: 12px;
     width: 320px;
     display: flex;
@@ -32,13 +41,16 @@ article {
     bottom: 0;
     padding: 46px 53px 0 0;
   }
-  article figure {
+  .suggestion figure {
     width: 100%;
   }
   .user-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+  .suggestions-section {
+    margin-top: 16px;
   }
   .suggestions-section .suggestions-container {
     width: 100%;
@@ -51,5 +63,11 @@ article {
   }
   .user-margin {
     margin-left: 8px;
+  }
+  .main-section {
+    width: calc(100vw - 320px - 60px);
+    position: absolute;
+    left: 0px;
+    right: 320px;
   }
 }/*# sourceMappingURL=main.css.map */
