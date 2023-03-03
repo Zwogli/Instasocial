@@ -171,6 +171,10 @@ p {
   color: var(--color-second);
 }
 
+.padd-l {
+  padding-left: 10px;
+}
+
 .c-pointer {
   cursor: pointer;
 }

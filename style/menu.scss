@@ -29,7 +29,6 @@ header{
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: left;
-    /* background-color: var(--color-lines); */
     height: 36px;
     min-width: 125px;
     width: 268px;
@@ -156,6 +155,7 @@ aside{
         // background-color: var(--color-hover);
         padding-right: 5px;
         border-radius: 50px!important;
+        justify-content: flex-start!important;
     }
     .hamburger{
         display: flex;
