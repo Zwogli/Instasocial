@@ -46,6 +46,14 @@ a{
 .a-user-m-t{
   margin-top: 5px;
 }
+.a-underline{
+  font-size: 12px;
+  color:var(--color-second);
+}
+.a-underline:hover{
+  text-decoration: underline;
+  color:var(--color-second);
+}
 .svg{
   height: 24px;
   width: 24px;

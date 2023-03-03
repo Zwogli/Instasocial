@@ -152,10 +152,10 @@ aside{
         cursor: pointer;
     }
     .menu-hover:hover{
-        width: 100%;
-        background-color: var(--color-hover);
+        width: 100%!important;
+        // background-color: var(--color-hover);
         padding-right: 5px;
-        border-radius: 50px;
+        border-radius: 50px!important;
     }
     .hamburger{
         display: flex;
