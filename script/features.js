@@ -1,3 +1,37 @@
+// todo add comments
+// todo load comments
+
+// todo function post-bar
+// todo count likes
+// function addComment(i){
+//     let commentInput = document.getElementById(`input${i}`);
+//     posts[i]["comment"].push(commentInput.value);
+//     document.getElementById(`allComments${i}`) += `${posts[post]["comment"]}`;
+// }
+
+function addComment(newComment){
+    let input = document.getElementById(`input${newComment}`).value;
+    posts[newComment]["comments"].push(input);
+    input.value = '';
+}
+
+function showComments(i){
+    let post = posts[i]
+    let comments = document.getElementById(`allComments${i}`);
+    comments.innerHTML = '';
+    
+    if(comments.style.display === "none"){
+        comments.style.display = "block";
+    }else{
+        comments.style.display = "none";
+    }
+
+    for (let j = 0; j < post["comment"].length; j++) {
+        let comment= post["comment"][j];
+        comments.innerHTML += `<li class="p-users-12px">${comment}</li>`
+    }
+}
+
 function darkMode(){
     let body = document.getElementById('body');
     let img = document.getElementById('img-darkmode');
@@ -18,11 +52,3 @@ function menu(){
         hamburgerMenu.style.display = "none";
     }
 }
-
-// todo add comments
-// todo load comments
-// todo hide/show comments
-// todo count comments
-
-// todo function post-bar
-// todo count likes
