@@ -110,6 +110,11 @@
   .figure-post{
     max-width: 470px;
   }
+  .allComments{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
   @media(min-width: 770px){
     main{
         height: 100vh;
