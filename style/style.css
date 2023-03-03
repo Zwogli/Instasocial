@@ -124,6 +124,10 @@ p {
   color: var(--color-second);
 }
 
+.p-c-darkmode {
+  color: var(--color-dark);
+}
+
 .p-users-12px {
   font-size: 12px;
   color: var(--color-dark);
