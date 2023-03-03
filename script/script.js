@@ -22,15 +22,22 @@ function generateNewPost(i, post){
 return /*html*/`
 <div class="post-head">
     <div class="post-head-left">
-        <img id="post-head-account${i}" class="img-border-42px" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
+        <a>
+            <img id="post-head-account${i}" class="img-border-42px" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
+        </a>
         
         <div class="user-margin a-center">
-            <p class="p-users-14px"><b>${post["author"]}</b></p>
-            <p class="p-users-12px">${post["location"]}</p>
+            <a class="opacity">
+                <p class="p-users-14px"><b>${post["author"]}</b></p>
+            </a>
+            <a>
+                <p class="p-users-12px">${post["location"]}</p>
+            </a>
         </div>
     </div>
-
-    <img class="post-head-right" src="img/svg/more_horiz_FILL0_wght400_GRAD0_opsz48.svg" alt="more">
+    <a class="opacity">
+        <img class="post-head-right darkModeFilter" src="img/svg/more_horiz_FILL0_wght400_GRAD0_opsz48.svg" alt="more">
+    </a>
 </div>
 
 <div class="post-body">
@@ -39,17 +46,34 @@ return /*html*/`
 
 <div class="post-bar">
     <div class="post-bar-left">
-        <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
-        <img class="svg darkModeFilter" src="img/svg/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="comment">
-        <img class="svg darkModeFilter" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
+        <a class="opacity">
+            <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
+        </a>
+        <a class="opacity">
+            <img class="svg darkModeFilter" src="img/svg/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="comment">
+        </a>
+        <a class="opacity pos">
+            <img class="svg darkModeFilter rotate" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
+        </a>
     </div>
-    <img class="svg darkModeFilter" src="img/svg/bookmark_FILL0_wght400_GRAD0_opsz48.svg" alt="bookmark">
+
+    <a class="opacity">
+        <img class="svg darkModeFilter" src="img/svg/bookmark_FILL0_wght400_GRAD0_opsz48.svg" alt="bookmark">
+    </a>
 </div>
 
 <div id="subscribe" class="subscribe">
-    <p class="p-users-14px margin">Gefällt ${post["likes"]} Mal</p>
-    <p class="p-users-14px">${post["message"]}</p>
+    <a>
+        <p class="p-users-14px margin">Gefällt ${post["likes"]} Mal</p>
+    </a>
+
+    <p class="p-users-14px">
+        <a><b>${post["author"]}</b></a>
+        ${post["message"]}
+    </p>
+
     <p id="number-comments" class="count-comment p-users-14px-grey c-pointer">Alle x Kommentare ansehen</p>
+    
     <div class="comment-section">
         <input type="text" placeholder="Kommentieren...">
         <button class="btn-trans">Posten</button>
@@ -71,8 +95,12 @@ function renderAddedUser(){
 function generateAddedUser(addedUser, i, post){
     addedUser.innerHTML += /*html*/`
     <div class="more-users">
-        <img id="adde-user-img${i}" class="img-border-66px" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
-        <p class="p-users-12px"><b>${post["author"]}</b></p>
+        <a>
+            <img id="adde-user-img${i}" class="img-border-66px" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
+        </a>
+        <a class="a-user-m-t">
+            <p class="p-users-12px">${post["author"]}</p>
+        </a>
     </div>
     `;
     document.getElementById(`adde-user-img${i}`).src = `${post["user-img"]}`;
@@ -96,9 +124,13 @@ function generateSuggestionUser(i, newUser){
     return  /*html*/`
     <div class="suggestions-users">
                         <div class="suggestions-user">
-                            <img id="suggestions-user-img${i}" class="suggestions-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="suggestion-account">
+                            <a>
+                                <img id="suggestions-user-img${i}" class="suggestions-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="suggestion-account">
+                            </a>
                             <div class="user-margin a-center">
-                                <p class="p-users-14px"><b>${newUser["user-name"]}</b></p>
+                                <a>
+                                    <p class="p-users-14px"><b>${newUser["user-name"]}</b></p>
+                                </a>
                                 <p class="p-users-12px-grey p-c-side">${newUser["name"]}</p>
                             </div>
                         </div>
@@ -117,7 +149,9 @@ function renderProfil(){
         let aktivProfil = profil[i];
         
     document.getElementById('user-name-aside').innerHTML = /*html*/`
-        <p class="p-users-14px"><b>${aktivProfil["profil-username"]}</b></p>
+        <a>
+            <p class="p-users-14px"><b>${aktivProfil["profil-username"]}</b></p>
+        </a>
         <p class="p-users-14px-grey">${aktivProfil["profil-name"]}</p>
     `;
     document.getElementById('user-img-aside').src = `${aktivProfil["profil-img"]}`;

@@ -40,6 +40,11 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.a-user-m-t {
+  margin-top: 5px;
 }
 
 .svg {
@@ -162,8 +167,14 @@ p {
 
 .margin {
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .opacity:hover {
   opacity: 0.5;
+}
+
+.pos {
+  position: relative;
+  top: -3px;
 }/*# sourceMappingURL=style.css.map */
