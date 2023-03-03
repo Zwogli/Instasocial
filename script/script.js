@@ -72,12 +72,16 @@ return /*html*/`
         ${post["message"]}
     </p>
 
-    <p id="number-comments" class="count-comment p-users-14px-grey c-pointer">Alle x Kommentare ansehen</p>
+    <p onclick="showComments(${i})" id="comments${i}" class="count-comment p-users-14px-grey c-pointer">Alle ${post["comment"].length} Kommentare ansehen</p>
     
-    <div class="comment-section">
-        <input type="text" placeholder="Kommentieren...">
-        <button class="btn-trans">Posten</button>
+    <div id="allComments${i}" style="display: none;" class="allComments">
     </div>
+    
+    <form class="comment-section">
+        <input id="input${i}" type="text" placeholder="Kommentieren..." required>
+        <button onclick="addComment(${i})" class="btn-trans">Posten</button>
+    </form>
+    
 </div>
 `;
 }
