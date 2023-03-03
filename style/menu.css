@@ -123,6 +123,24 @@ aside .logo-txt {
     justify-content: center;
     align-items: center;
   }
+  #menu-div {
+    position: absolute;
+    top: calc(100vh - 40px - 308px - 16px);
+    left: 16px;
+    background-color: var(--color-bright);
+    background-color: var(--color-hamburger);
+    min-width: 227px;
+    z-index: 10;
+    border-radius: 3px;
+    box-shadow: var(--box-shadow);
+  }
+  #menu-div .box-menu {
+    height: 44px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 @media (min-width: 1260px) {
   aside {

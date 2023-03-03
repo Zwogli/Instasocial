@@ -1,6 +1,8 @@
 :root{
   --color-dark: #000000;
   --color-bright: #F5F5F5;
+  --color-hamburger: rgb(242, 242, 242);
+  --color-shadow: #a8a7a750;
 
 
   --color-second: #8e8e8e;
@@ -10,6 +12,8 @@
   --color-hover: #7373734d;
 
   --filter: brightness(0) invert(0);
+  --box-shadow: 1px 1px 10px var(--color-shadow),
+  -1px -1px 10px var(--color-shadow);
 }
 *{
   padding: 0;
@@ -19,9 +23,11 @@ html{
   height: 100%;
 }
 .darkMode{
+  --box-shadow:none;
   --color-dark: #F5F5F5;
   --color-bright: #000000;
   --color-second: #a8a8a8;
+  --color-hamburger: rgb(38,38,38);
   --color-lines: rgb(109, 108, 108);
   --filter: brightness(0) invert(1);
 }
@@ -53,6 +59,9 @@ a{
 .a-underline:hover{
   text-decoration: underline;
   color:var(--color-second);
+}
+.box-hover:hover{
+  background-color: var(--color-lines);
 }
 .svg{
   height: 24px;

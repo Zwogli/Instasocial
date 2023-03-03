@@ -67,15 +67,57 @@
                     <img id="menu-profil-img" class="svg border-r" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
                     <p class="menu-txt p-c-darkmode">Profil</p>
                 </div>
-                <!-- todo dark mode toggle -->
-                <img onclick="darkMode()" class="svg darkModeFilter" src="img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="dark mode">
             </div>
         </nav>
         <div class="d-flex menu-hover hamburger">
             <img class="svg darkModeFilter" src="img/svg/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
-            <p class="menu-txt p-c-darkmode">Mehr</p>
+            <p onclick="menu()" class="menu-txt p-c-darkmode">Mehr</p>
         </div>
+        
     </aside>
+
+    <div id="menu-div">
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Einstellungen</p>
+                <img class="svg darkModeFilter" src="img/svg/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Deine Aktivitäten</p>
+                    <img class="svg darkModeFilter" src="img/svg/history_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Gespichert</p>
+                <img class="svg darkModeFilter" src="img/svg/bookmark_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p onclick="darkMode()" class="p-c-darkmode">Modus wechseln</p>
+                <img id="img-darkmode" class="svg darkModeFilter" src="img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Problem melden</p>
+                <img class="svg darkModeFilter" src="img/svg/info_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Konto wechseln</p>
+            </div>
+        </a>
+        <a>
+            <div class="box-menu box-hover">
+                <p class="p-c-darkmode">Abmelden</p>
+            </div>
+        </a>
+    </div>
 
     <main class="main">
         <article class="main-section">
@@ -125,6 +167,7 @@
 
             </figure>
         </article>
+
     </main>
 
     <footer id="footer">
