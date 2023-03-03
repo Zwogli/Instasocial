@@ -126,7 +126,7 @@ aside .logo-txt {
   #menu-div {
     position: absolute;
     top: calc(100vh - 40px - 308px - 16px);
-    left: 16px;
+    left: 26px;
     background-color: var(--color-bright);
     background-color: var(--color-hamburger);
     min-width: 227px;
