@@ -1,9 +1,11 @@
 :root {
   --color-dark: #000000;
   --color-bright: #F5F5F5;
+  --color-second: #8e8e8e;
   --color-follow: #0081D5;
   --color-lines: #737373;
   --color-hover: #7373734d;
+  --filter: brightness(0) invert(0);
 }
 
 * {
@@ -15,14 +17,21 @@ html {
   height: 100%;
 }
 
-body {
-  font-family: "Roboto";
-  height: 100%;
-  filter: invert(0);
+.darkMode {
+  --color-dark: #F5F5F5;
+  --color-bright: #000000;
+  --color-second: #a8a8a8;
+  --color-lines: rgb(109, 108, 108);
+  --filter: brightness(0) invert(1);
 }
 
-p {
-  margin: 0;
+.darkModeFilter {
+  filter: var(--filter);
+}
+
+body {
+  font-family: "Roboto";
+  background-color: var(--color-bright);
 }
 
 .material-symbols-rounded {
@@ -107,6 +116,14 @@ p {
   border: 3px solid transparent;
 }
 
+p {
+  margin: 0;
+}
+
+.p-c-side {
+  color: var(--color-second);
+}
+
 .p-users-12px {
   font-size: 12px;
   color: var(--color-dark);
@@ -114,7 +131,7 @@ p {
 
 .p-users-12px-grey {
   font-size: 12px;
-  color: var(--color-lines);
+  color: var(--color-second);
 }
 
 .p-users-14px {
@@ -124,7 +141,7 @@ p {
 
 .p-users-14px-grey {
   font-size: 14px;
-  color: var(--color-lines);
+  color: var(--color-second);
 }
 
 .c-pointer {

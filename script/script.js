@@ -39,11 +39,11 @@ return /*html*/`
 
 <div class="post-bar">
     <div class="post-bar-left">
-        <img class="svg" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
-        <img class="svg" src="img/svg/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="comment">
-        <img class="svg" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
+        <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
+        <img class="svg darkModeFilter" src="img/svg/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="comment">
+        <img class="svg darkModeFilter" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
     </div>
-    <img class="svg" src="img/svg/bookmark_FILL0_wght400_GRAD0_opsz48.svg" alt="bookmark">
+    <img class="svg darkModeFilter" src="img/svg/bookmark_FILL0_wght400_GRAD0_opsz48.svg" alt="bookmark">
 </div>
 
 <div id="subscribe" class="subscribe">
@@ -52,7 +52,7 @@ return /*html*/`
     <p id="number-comments" class="count-comment p-users-14px-grey c-pointer">Alle x Kommentare ansehen</p>
     <div class="comment-section">
         <input type="text" placeholder="Kommentieren...">
-        <button>Posten</button>
+        <button class="btn-trans">Posten</button>
     </div>
 </div>
 `;

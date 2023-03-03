@@ -16,8 +16,9 @@
 
     <script src="script/json.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/features.js"></script>
 </head>
-<body onload="render()">
+<body id="body" onload="render()" class="darkMode">
     <header id="header">
         <nav class="nav-head">
             <h1 class="headline">Instasocial</h1>
@@ -35,41 +36,43 @@
             
             <div class="menu-desktop">
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/home_FILL1_wght400_GRAD0_opsz48.svg" alt="home">
+                    <img class="svg darkModeFilter" src="img/svg/home_FILL1_wght400_GRAD0_opsz48.svg" alt="home">
                     <p class="menu-txt"><b>Startseite</b></p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search">
+                    <img class="svg darkModeFilter" src="img/svg/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search">
                     <p class="menu-txt">Suchen</p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/explore_FILL0_wght400_GRAD0_opsz48.svg" alt="explore">
+                    <img class="svg darkModeFilter" src="img/svg/explore_FILL0_wght400_GRAD0_opsz48.svg" alt="explore">
                     <p class="menu-txt">Entdecken</p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/slideshow_FILL0_wght400_GRAD0_opsz48.svg" alt="video">
+                    <img class="svg darkModeFilter" src="img/svg/slideshow_FILL0_wght400_GRAD0_opsz48.svg" alt="video">
                     <p class="menu-txt">Reels</p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg rotate" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
+                    <img class="svg rotate darkModeFilter" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
                     <p class="menu-txt">Nachrichten</p>
                 </div>
                 <div class="d-flex menu-hover">
-                    <img class="svg" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="message">
+                    <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="message">
                     <p class="menu-txt">Benachrichtigung</p>
                 </div>
                 <div class="d-flex menu-hover"> 
-                    <img class="svg" src="img/svg/add_box_FILL0_wght400_GRAD0_opsz48.svg" alt="add">
+                    <img class="svg darkModeFilter" src="img/svg/add_box_FILL0_wght400_GRAD0_opsz48.svg" alt="add">
                     <p class="menu-txt">Erstellen</p>
                 </div>
                 <div class="d-flex menu-hover">
                     <img id="menu-profil-img" class="svg border-r" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
                     <p class="menu-txt">Profil</p>
                 </div>
+                <!-- todo dark mode toggle -->
+                <img onclick="darkMode()" class="svg darkModeFilter" src="img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="dark mode">
             </div>
         </nav>
         <div class="d-flex menu-hover hamburger">
-            <img class="svg" src="img/svg/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
+            <img class="svg darkModeFilter" src="img/svg/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
             <p class="menu-txt">Mehr</p>
         </div>
     </aside>
@@ -100,8 +103,8 @@
 
                 <section class="suggestions-section">
                     <div class="suggestions-container suggestion-margin">
-                        <p>Vorschläge für dich</p>
-                        <p><b>Alle Ansehen</b></p>
+                        <p class="p-c-side">Vorschläge für dich</p>
+                        <p class="p-users-12px"><b>Alle Ansehen</b></p>
                     </div>
 
                     <div id="suggestions-user" class="suggestion-profiles">
@@ -125,11 +128,11 @@
 
     <footer id="footer">
         <nav class="nav-foot">
-            <img class="svg" src="img/svg/home_FILL1_wght400_GRAD0_opsz48.svg" alt="home">
-            <img class="svg" src="img/svg/explore_FILL0_wght400_GRAD0_opsz48.svg" alt="explore">
-            <img class="svg" src="img/svg/slideshow_FILL0_wght400_GRAD0_opsz48.svg" alt="video">
-            <img class="svg" src="img/svg/add_box_FILL0_wght400_GRAD0_opsz48.svg" alt="add">
-            <img class="svg rotate" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
+            <img class="svg darkModeFilter" src="img/svg/home_FILL1_wght400_GRAD0_opsz48.svg" alt="home">
+            <img class="svg darkModeFilter" src="img/svg/explore_FILL0_wght400_GRAD0_opsz48.svg" alt="explore">
+            <img class="svg darkModeFilter" src="img/svg/slideshow_FILL0_wght400_GRAD0_opsz48.svg" alt="video">
+            <img class="svg darkModeFilter" src="img/svg/add_box_FILL0_wght400_GRAD0_opsz48.svg" alt="add">
+            <img class="svg darkModeFilter rotate" src="img/svg/send_FILL0_wght400_GRAD0_opsz48.svg" alt="send">
             <img id="menu-footer-profil-img" class="svg border-r" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="account">
         </nav>
     </footer>
