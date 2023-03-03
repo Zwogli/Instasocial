@@ -18,3 +18,11 @@ function menu(){
         hamburgerMenu.style.display = "none";
     }
 }
+
+// todo add comments
+// todo load comments
+// todo hide/show comments
+// todo count comments
+
+// todo function post-bar
+// todo count likes
