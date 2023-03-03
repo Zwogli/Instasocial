@@ -1,18 +1,17 @@
-// todo add comments
-// todo load comments
-
 // todo function post-bar
 // todo count likes
-// function addComment(i){
-//     let commentInput = document.getElementById(`input${i}`);
-//     posts[i]["comment"].push(commentInput.value);
-//     document.getElementById(`allComments${i}`) += `${posts[post]["comment"]}`;
-// }
+
+function like(i){
+    
+}
+
 
 function addComment(newComment){
     let input = document.getElementById(`input${newComment}`).value;
-    posts[newComment]["comments"].push(input);
-    input.value = '';
+    posts[newComment]["comment"].push(input);
+    input = '';
+    save();
+    render();
 }
 
 function showComments(i){
@@ -28,7 +27,22 @@ function showComments(i){
 
     for (let j = 0; j < post["comment"].length; j++) {
         let comment= post["comment"][j];
-        comments.innerHTML += `<li class="p-users-12px">${comment}</li>`
+        comments.innerHTML += /*html*/`
+        <li class="p-users-12px">${comment} <a>X</a></li>
+        `;
+    }
+}
+
+// Save JSON
+function save(){              
+    let postsASText = JSON.stringify(posts);
+    localStorage.setItem('posts',postsASText);   
+}
+
+function load(){                
+    let postsASText = localStorage.getItem('posts');    
+    if (postsASText){
+        posts = JSON.parse(postsASText);
     }
 }
 
