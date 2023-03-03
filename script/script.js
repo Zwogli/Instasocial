@@ -99,7 +99,7 @@ function generateSuggestionUser(i, newUser){
                             <img id="suggestions-user-img${i}" class="suggestions-user-img" src="img/svg/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="suggestion-account">
                             <div class="user-margin a-center">
                                 <p class="p-users-14px"><b>${newUser["user-name"]}</b></p>
-                                <p class="p-users-12px-grey">${newUser["name"]}</p>
+                                <p class="p-users-12px-grey p-c-side">${newUser["name"]}</p>
                             </div>
                         </div>
                         <a class="follow a-center">Folgen</a>

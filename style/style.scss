@@ -2,6 +2,7 @@
   --color-dark: #000000;
   --color-bright: #F5F5F5;
 
+
   --color-second: #8e8e8e;
   --color-follow: #0081D5;
 
@@ -38,8 +39,10 @@ body{
   'GRAD' 0,
   'opsz' 48
 }
+a{
+  text-decoration: none;
+}
 .svg{
-
   height: 24px;
   width: 24px;
   cursor: pointer;
@@ -67,6 +70,9 @@ body{
   color: var(--color-follow);
   text-decoration: none;
   cursor: pointer;
+}
+.follow:hover{
+  color: var(--color-dark);
 }
 .d-flex{
   display: flex;
@@ -130,4 +136,7 @@ p{
 }
 .margin{
   margin-bottom: 5px;
+}
+.opacity:hover{
+  opacity: .5;
 }
