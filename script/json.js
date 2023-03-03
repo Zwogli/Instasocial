@@ -13,7 +13,7 @@ let posts = [
         "content": `img/spray-can-gfda02e312_640.jpg`,
         "likes": 666,
         "message": "Wieder einmal hat El Barto die Nachbarschaft aufgehübscht!",
-        "comment": [],
+        "comment": ["Spitzen Werk", "Endlich jemand nach meinem Geschmack"],
     },
     {
         "user-img": `img/user-followed/bird-gc5be3399e_640.png`,
@@ -31,7 +31,7 @@ let posts = [
         "content": `img/middle-earth-gb2bb08e64_640.jpg`,
         "likes": 15360,
         "message": "Nach den erschütternden Ereignissen in Mittelerde, setzt die Tourismusbranche erste anzeichen für den Wiederaufbau.",
-        "comment": [],
+        "comment": ["Endlich kann Mordor mit seinen heißen Quellen glänzen.", "Pffff... Touristen..., die braucht niemand in Hobbington.", "Ich sehe viele Augen die umherstreifen werden!"],
     },
     {
         "user-img": `img/user-followed/news-gdb05a2f9f_640.png`,
