@@ -114,6 +114,11 @@ a {
   gap: 8px;
 }
 
+.d-space-bet {
+  display: flex;
+  justify-content: space-between;
+}
+
 .a-center {
   display: flex;
   flex-direction: column;
@@ -147,6 +152,11 @@ a {
   background: linear-gradient(white, white) padding-box, linear-gradient(to left bottom, darkorchid, orange) border-box;
   border-radius: 50%;
   border: 3px solid transparent;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
 }
 
 p {

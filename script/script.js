@@ -46,7 +46,7 @@ return /*html*/`
 
 <div class="post-bar">
     <div class="post-bar-left">
-        <a class="opacity">
+        <a onclick="like(${i})" class="opacity">
             <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
         </a>
         <a class="opacity">
@@ -74,7 +74,7 @@ return /*html*/`
 
     <p onclick="showComments(${i})" id="comments${i}" class="count-comment p-users-14px-grey c-pointer">Alle ${post["comment"].length} Kommentare ansehen</p>
     
-    <div id="allComments${i}" style="display: none;" class="allComments">
+    <div id="allComments${i}" class="allComments">
     </div>
     
     <form class="comment-section">
