@@ -95,6 +95,9 @@ a{
 .follow:hover{
   color: var(--color-dark);
 }
+.d-none{
+  display: none !important;
+}
 .d-flex{
   display: flex;
   flex-direction: row;

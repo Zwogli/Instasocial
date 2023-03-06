@@ -1,3 +1,5 @@
+
+
 function renderLike(i){
     let likeImg = document.getElementById(`change-like${i}`);
     if(posts[i]["like"] == false){
@@ -48,7 +50,6 @@ function showComments(i){
     }
 }
 
-
 function darkMode(){
     let body = document.getElementById('body');
     let img = document.getElementById('img-darkmode');
@@ -61,12 +62,21 @@ function darkMode(){
         }
 }
 
+// function menu(){
+//     let hamburgerMenu = document.getElementById('menu-div');
+//     if(hamburgerMenu.style.display === "none"){
+//         hamburgerMenu.style.display = "block";
+//     }else{
+//         hamburgerMenu.style.display = "none";
+//     }
+// }
 
 function menu(){
     let hamburgerMenu = document.getElementById('menu-div');
-    if(hamburgerMenu.style.display === "none"){
-        hamburgerMenu.style.display = "block";
-    }else{
-        hamburgerMenu.style.display = "none";
-    }
+   hamburgerMenu.classList.toggle("d-none")
+}
+
+function menuClose(){
+    let hamburgerMenu = document.getElementById('menu-div');
+    hamburgerMenu.classList.add("d-none")
 }

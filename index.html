@@ -18,7 +18,7 @@
     <script src="script/script.js"></script>
     <script src="script/features.js"></script>
 </head>
-<body id="body" onload="render()" class="">
+<body id="body" onload="render()" onclick="menuClose()">
     <header id="header">
         <nav class="nav-head">
             <h1 class="headline p-c-darkmode">Instasocial</h1>
@@ -69,14 +69,14 @@
                 </div>
             </div>
         </nav>
-        <div onclick="menu()" class="d-flex menu-hover hamburger padd-l c-pointer">
+        <div onclick="menu(), event.stopPropagation()" class="d-flex menu-hover hamburger padd-l c-pointer">
             <img class="svg darkModeFilter" src="img/svg/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
             <p class="menu-txt p-c-darkmode">Mehr</p>
         </div>
         
     </aside>
 
-    <div id="menu-div" style="display: none;">
+    <div id="menu-div" onclick="event.stopPropagation()" class="d-none">
         <a>
             <div class="box-menu box-hover">
                 <p class="p-c-darkmode">Einstellungen</p>
