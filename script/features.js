@@ -28,7 +28,7 @@ function showComments(i){
     for (let j = 0; j < post["comment"].length; j++) {
         let comment= post["comment"][j];
         comments.innerHTML += /*html*/`
-        <li class="p-users-12px">${comment} <a>X</a></li>
+        <li class="p-users-12px">${comment}</li>
         `;
     }
 }
