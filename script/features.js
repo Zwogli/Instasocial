@@ -1,8 +1,23 @@
-// todo function post-bar
-// todo count likes
+function renderLike(i){
+    let likeImg = document.getElementById(`change-like${i}`);
+    if(posts[i]["like"] == false){
+        likeImg.innerHTML = `<img id="bar-like${i}" onclick="toggleLike(${i})" class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite"></img>`;
+    }else{
+        likeImg.innerHTML = `<img onclick="toggleLike(${i})" class="svg" src="img/heart-69-64.png" alt="favorite"></img>`;
+    }
+    document.getElementById(`likes-count${i}`).innerHTML = `Gefällt ${posts[i]["likes"]} Mal`;
+}
 
-function like(i){
-    
+function toggleLike(i){
+    if(posts[i]["like"] == false){
+        posts[i]["like"] = true;
+        document.getElementById(`likes-count${i}`).innerHTML = "Gefällt "+ posts[i]["likes"]++ +" Mal";
+    }else{
+        posts[i]["like"] = false;
+        document.getElementById(`likes-count${i}`).innerHTML = "Gefällt " + posts[i]["likes"]-- + " Mal";
+    }
+    save();
+    renderLike(i);
 }
 
 
@@ -33,18 +48,6 @@ function showComments(i){
     }
 }
 
-// Save JSON
-function save(){              
-    let postsASText = JSON.stringify(posts);
-    localStorage.setItem('posts',postsASText);   
-}
-
-function load(){                
-    let postsASText = localStorage.getItem('posts');    
-    if (postsASText){
-        posts = JSON.parse(postsASText);
-    }
-}
 
 function darkMode(){
     let body = document.getElementById('body');
@@ -57,6 +60,7 @@ function darkMode(){
             img.src = `img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg`;
         }
 }
+
 
 function menu(){
     let hamburgerMenu = document.getElementById('menu-div');

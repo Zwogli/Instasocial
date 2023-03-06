@@ -1,3 +1,18 @@
+load();
+
+// Save JSON
+function save(){              
+    let postsASText = JSON.stringify(posts);
+    localStorage.setItem('posts',postsASText);   
+}
+
+function load(){                
+    let postsASText = localStorage.getItem('posts');    
+    if (postsASText){
+        posts = JSON.parse(postsASText);
+    }
+}
+
 function render(){
     renderProfil();
     renderSuggestionUser();
@@ -12,7 +27,7 @@ function renderPost(){
         let post = posts[i];
         
         newPosts.innerHTML += generateNewPost(i, post);
-
+        renderLike(i);
         document.getElementById(`post-head-account${i}`).src = `${post["user-img"]}`;
         document.getElementById(`body-img${i}`).src = `${post["content"]}`;
     }
@@ -46,8 +61,7 @@ return /*html*/`
 
 <div class="post-bar">
     <div class="post-bar-left">
-        <a onclick="like(${i})" class="opacity">
-            <img class="svg darkModeFilter" src="img/svg/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="favorite">
+        <a onclick="renderLike(${i})" id="change-like${i}" class="opacity">
         </a>
         <a class="opacity">
             <img class="svg darkModeFilter" src="img/svg/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="comment">
@@ -64,7 +78,7 @@ return /*html*/`
 
 <div id="subscribe" class="subscribe">
     <a>
-        <p class="p-users-14px margin">Gefällt ${post["likes"]} Mal</p>
+        <p id="likes-count${i}" class="p-users-14px margin"></p>
     </a>
 
     <p class="p-users-14px">
