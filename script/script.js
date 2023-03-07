@@ -93,7 +93,7 @@ return /*html*/`
     
     <form class="comment-section">
         <input id="input${i}" type="text" placeholder="Kommentieren..." required>
-        <button onclick="addComment(${i})" class="btn-trans">Posten</button>
+        <button id="btn${i}" onclick="addComment(${i})" class="btn-trans">Posten</button>
     </form>
     
 </div>

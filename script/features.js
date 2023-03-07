@@ -21,9 +21,9 @@ function toggleLike(i){
 }
 
 function addComment(newComment){
-    let input = document.getElementById(`input${newComment}`).value;
-    posts[newComment]["comment"].push(input);
-    input = '';
+    let input = document.getElementById(`input${newComment}`);
+    posts[newComment]["comment"].push(input.value);
+    input.value = '';
     save();
     render();
 }
@@ -57,6 +57,16 @@ function deleteComment(i, j){
     save();
 }
 
+function menu(){
+    let hamburgerMenu = document.getElementById('menu-div');
+    hamburgerMenu.classList.toggle("d-none")
+}
+
+function menuClose(){
+    let hamburgerMenu = document.getElementById('menu-div');
+    hamburgerMenu.classList.add("d-none")
+}
+
 function darkMode(){
     let body = document.getElementById('body');
     let img = document.getElementById('img-darkmode');
@@ -67,14 +77,4 @@ function darkMode(){
         }else{
             img.src = `img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg`;
         }
-}
-
-function menu(){
-    let hamburgerMenu = document.getElementById('menu-div');
-   hamburgerMenu.classList.toggle("d-none")
-}
-
-function menuClose(){
-    let hamburgerMenu = document.getElementById('menu-div');
-    hamburgerMenu.classList.add("d-none")
 }
