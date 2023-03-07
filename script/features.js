@@ -1,5 +1,3 @@
-
-
 function renderLike(i){
     let likeImg = document.getElementById(`change-like${i}`);
     if(posts[i]["like"] == false){
@@ -21,7 +19,6 @@ function toggleLike(i){
     save();
     renderLike(i);
 }
-
 
 function addComment(newComment){
     let input = document.getElementById(`input${newComment}`).value;
@@ -45,9 +42,19 @@ function showComments(i){
     for (let j = 0; j < post["comment"].length; j++) {
         let comment= post["comment"][j];
         comments.innerHTML += /*html*/`
-        <li class="p-users-12px">${comment}</li>
+        <li class="li-style p-users-12px">
+        ${comment}
+        <img onclick="deleteComment(${i}, ${j})" class="c-pointer" src="img/svg/cancel_FILL0_wght400_GRAD0_opsz48.svg" alt="cancel">
+        </li>
         `;
     }
+}
+
+function deleteComment(i, j){
+    posts[i]["comment"].splice(j, 1);
+
+    render();
+    save();
 }
 
 function darkMode(){
@@ -61,15 +68,6 @@ function darkMode(){
             img.src = `img/svg/dark_mode_FILL0_wght400_GRAD0_opsz48.svg`;
         }
 }
-
-// function menu(){
-//     let hamburgerMenu = document.getElementById('menu-div');
-//     if(hamburgerMenu.style.display === "none"){
-//         hamburgerMenu.style.display = "block";
-//     }else{
-//         hamburgerMenu.style.display = "none";
-//     }
-// }
 
 function menu(){
     let hamburgerMenu = document.getElementById('menu-div');
