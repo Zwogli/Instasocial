@@ -1,3 +1,25 @@
+function search() {
+    let search = document.getElementById('search-mobile').value;
+    search = search.toLowerCase();
+
+    document.getElementById('post').innerHTML = '';
+
+    if(search === '' || null){
+        render();
+    }else{
+    for (let j = 0; j < posts.length; j++) {
+        load(j);
+        let post = posts[j];
+        if (post["author"].toLowerCase().includes(search)) {
+            document.getElementById('post').innerHTML += generateNewPost(j, post);
+            renderLike(j);
+        document.getElementById(`post-head-account${j}`).src = `${post["user-img"]}`;
+        document.getElementById(`body-img${j}`).src = `${post["content"]}`;
+        }
+    }
+}
+}
+
 function renderLike(i){
     let likeImg = document.getElementById(`change-like${i}`);
     if(posts[i]["like"] == false){

@@ -169,6 +169,7 @@ aside .logo-txt {
   .menu-desktop {
     width: 100%;
     align-items: flex-start;
+    padding-left: 10px;
   }
   .menu-txt {
     display: flex;
