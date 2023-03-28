@@ -81,7 +81,7 @@ function deleteComment(i, j){
 
 function menu(){
     let hamburgerMenu = document.getElementById('menu-div');
-    hamburgerMenu.classList.toggle("d-none")
+    hamburgerMenu.classList.toggle("d-none");
 }
 
 function menuClose(){
